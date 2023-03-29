@@ -1,0 +1,38 @@
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  margin-bottom: 15px;
+  z-index: 5;
+  padding: 5px 0;
+  margin-left: 1000px;
+}
+
+.header_container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+#img {
+  display: block;
+  margin: auto;
+  height: 128px;
+  width: 128px;
+  padding: 2rem;
+}
+
+#canvas {
+  display: block;
+  margin: 2rem auto;
+  width: 540px;
+  height: 540px;
+}
