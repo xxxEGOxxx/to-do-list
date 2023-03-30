@@ -3,6 +3,7 @@ import { v4 as uuidV4 } from "uuid"
 console.log(uuidV4())
 console.log(uuidV4())
 console.log(uuidV4())
+console.log(uuidV4())
 
 type Task = {
     id: string
@@ -16,7 +17,7 @@ const form = document.getElementById("new-task-form") as HTMLFormElement | null
 const input = document.querySelector<HTMLInputElement>("#new-task-title")
 
 form?.addEventListener("submit", e => {
-    e.preventDefault()
+    e.preventDefault()  
 
     if (input?.value == "" || input?.value == null) return
     
