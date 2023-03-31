@@ -6,10 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TS.proj</title>
     <style>
+        body {
+            font-family: "Roboto";
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            position: fixed;
+            width: 100%;
+            background: #ffffff;
+            margin-bottom: 15px;
+            z-index: 5;
+            padding: 5px 0;
+        }
+        .header_container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 10px;
+            background-color: rgb(227, 227, 227);
+        }
+        .header_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        #new-task-title{
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
         #list{
             list-style: none;
             padding: 0;
+            margin-right: 170px;
         }
+       
     </style>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -22,10 +56,16 @@
     <!-- <link rel="stylesheet" href="../css/style.css">     -->
 </head>
 <body>
-    <ul id="list"></ul>
-    <form id="new-task-form">
-        <input type="text" id="new-task-title">
-        <button type="submit">Add</button>
-    </form>    
+    <header class="header">
+        <div class="header_container">
+            <div class="header_wrapper">
+                <form id="new-task-form">
+                    <input type="text" id="new-task-title">
+                    <button type="submit">Add</button>
+                </form>    
+                <ul id="list"></ul>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
